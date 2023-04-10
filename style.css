@@ -404,49 +404,127 @@ small {
     cursor: pointer;
     filter: grayscale(100%);
 }
-.col-5 img:hover{
+
+.col-5 img:hover {
     filter: grayscale(0);
 }
 
 /** footer */
-.footer{
+.footer {
     background: #000;
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
- }
- .footer p{
+}
+
+.footer p {
     color: #8a8a8a;
- }
- .footer h3{
+}
+
+.footer h3 {
     color: #fff;
     margin-bottom: 20px;
- }
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
     min-width: 250px;
     margin-bottom: 20px;
 }
-.footer-col-1{
+
+.footer-col-1 {
     flex-basis: 25%;
 }
-.footer-col-2{
+
+.footer-col-2 {
     flex: 1;
     text-align: center;
 }
-.footer-col-2 img{
+
+.footer-col-2 img {
     width: 180px;
     margin-bottom: 20px;
 }
-.footer-col-3, .footer-col-4{
+
+.footer-col-3,
+.footer-col-4 {
     flex-basis: 12%;
-    text-align:center;
+    text-align: center;
 }
-ul{
+
+ul {
     list-style-type: none;
 }
-.app-logo{
+
+.app-logo {
     margin-top: 20px;
 }
-.app-logo img{
-    width: 40%; /* 40% pois, usou 40% para cada um e 20% acima e fica melhor que 140px*/
+
+.app-logo img {
+    width: 40%;
+    /* 40% pois, usou 40% para cada um e 20% acima e fica melhor que 140px*/
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* --- media query for menu --- */
+@media only screen and (max-width: 800px) {
+
+    /* Com 800px os itens menu horizontal somem*/
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        /* Agora temos uma faixa grande e escura*/
+    }
+
+    nav ul li a {
+        color: #fff;
+        /* mudar a cor da fonte para branco */
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* --- media query for less than 600 screeen size  --- */
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+        /* Todo texto que ficava alinhado a esquerda será centralizado */
+    }
+
+    .col-2, .col-3,.col-4 {
+        flex-basis: 100%;
+    }
 }

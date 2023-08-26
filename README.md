@@ -1,7 +1,6 @@
 # Front End Ecoomerce
-VERSÃO v00.00.001 - connection test - First commit test
 
-#  simpleEcommerce-FrontEnd-html-css
+#  simple Ecommerce-FrontEnd-html-css
 
 Single page application to Ecommerce which uses cards, Responsive, worked well on desktop and smaller units like cell phones; the row menu is changed for toogle menu in smaller devices, and the texts in general were centered.
 
